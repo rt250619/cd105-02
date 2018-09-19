@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HELLO TITLE</title>
+
+    <!--CSS外部連結寫法-->
+    <!-- <link rel=stylesheet type="text/css" href="style/style.css"> -->
+
+    <!--CSS內部連結寫法-->
+    <style type="text/css">
+        .bigfont {
+            font-size: 50px;
+        }
+
+        .smallfont {
+            font-size: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .redtext {
+            color: red;
+        }
+
+        .bluetext {
+            color: blue;
+        }
+
+        #bigbox {
+            width: 550px;
+            height: 250px;
+            background-color: antiquewhite;
+        }
+
+        #smallbox {
+            width: 200px;
+            height: 50px;
+            background-color: darkseagreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>HELLO
+        <div>
+            world
+
+            <span>
+                <div id="bigbox" class="bigfont center redtext">DIV的行距比較小</div>
+                <p id="smallbox" class="right bluetext">P的行距比較大</p>
+
+                <p>列表練習</p>
+                <ul>
+                    <li>ul列表</li>
+                    <li>ul列表</li>
+                    <li>ul列表</li>
+                </ul>
+                <ol>
+                    <li>ol列表</li>
+                    <li>ol列表</li>
+                    <li>ol列表</li>
+                </ol>
+
+            </span>
+
+        </div>
+
+    </p>
+    <table border="1">
+        <tr>
+            <td id="smallbox" class="bigfont">1</td>
+            <td id="smallbox" class="bigfont">2</td>
+            <td id="smallbox" class="bigfont">3</td>
+            <td id="smallbox" class="bigfont">4</td>
+
+        </tr>
+        <tr>
+            <td rowspan="2" id="smallbox" class="bigfont">5</td>
+            <td id="smallbox" class="bigfont">6</td>
+            <td id="smallbox" class="bigfont">7</td>
+            <td id="smallbox" class="bigfont">8</td>
+        </tr>
+        <tr>
+            <!--<td id="smallbox" class="bigfont">9</td> -->
+            <td id="smallbox" class="bigfont">10</td>
+            <td colspan="2" id="smallbox" class="bigfont">11~12</td>
+        </tr>
+    </table>
+    <a href="https://typecoder.blogspot.com/2017/12/visual-studio-code.html" target="_blank">
+        VS Code 值得記下來的快速鍵
+    </a>
+    <!--表格填入練習-->
+    <form action="">
+        <ul>
+            <li>
+                firstname<br>
+                <input type="text" name="firstname" value="">
+            </li>
+            <li>
+                lastname<br>
+                <input type="text" name="lastname" value="">
+            </li>
+            <li>
+                password<br>
+                <input type="password" name="password" value="">
+            </li>
+            <li>
+                <input type="submit" value="submit">
+            </li>
+        </ul>
+</body>
+
+</html>
